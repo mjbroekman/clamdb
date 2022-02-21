@@ -1,0 +1,8 @@
+rule MJB_Example_Email_Rule1 {
+    strings:
+        $string1 = "Content-Type: text/html"
+        $string2 = "Content-Transfer-Encoding: base64"
+        $safe1 = /\s*To:[^\n]*Kalimar\@comcast\.net/ nocase
+    condition:
+        any of ($string*) and not any of ($safe*)
+}
