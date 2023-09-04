@@ -3,3 +3,5 @@ main*
 bytecode*
 COPYING
 freshclam*
+test.ndb
+false_positive.ign2
